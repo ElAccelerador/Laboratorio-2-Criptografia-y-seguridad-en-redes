@@ -15,13 +15,16 @@ Este repositorio contiene un script en Python diseñado para realizar un ataque 
 
 1. **Configurar los archivos de entrada**  
    Crea los archivos `names.txt` y `passwords.txt` con las listas de nombres de usuario y contraseñas que se intentarán. Se dejarán los utilizados en el laboratorio igualmente.
-
-2. **Ejecutar el script**  
+   
+2. **Modificar el script**
+   El script utilizado deberá ser modificado, tanto el nivel de seguridad en el que se utiliza, como el valor de PHPSESSID de la Cookie utilizada.
+   
+4. **Ejecutar el script**  
    Ejecuta `PythonAttack.py` con el siguiente comando:
    ```bash
    python3 PythonAttack.py
 
-3.**Verificar los resultados**
+4.**Verificar los resultados**
 El script intentará hacer login con todas las combinaciones de usuario y contraseña y mostrará si el login fue exitoso o no para cada combinación.
 
 ## 📸 Ejemplo de salida

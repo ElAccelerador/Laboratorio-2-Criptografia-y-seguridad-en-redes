@@ -25,7 +25,7 @@ Este repositorio contiene un script en Python diseñado para realizar un ataque 
    python3 PythonAttack.py
 
 4.**Verificar los resultados**
-El script intentará hacer login con todas las combinaciones de usuario y contraseña y mostrará si el login fue exitoso o no para cada combinación.
+   El script intentará hacer login con todas las combinaciones de usuario y contraseña y mostrará si el login fue exitoso o no para cada combinación.
 
 ## 📸 Ejemplo de salida
 

@@ -1,2 +1,35 @@
-# Laboratorio-2-Criptografia-y-seguridad-en-redes
-El script intenta iniciar sesión en la página de vulnerabilidad "Brute Force" de DVWA utilizando combinaciones de usuarios y contraseñas que se leen desde dos archivos de texto: names.txt y passwords.txt. La ejecución del script envía solicitudes GET con los datos del formulario, utilizando cookies 
+# PythonAttack: Ataque de Fuerza Bruta en DVWA
+
+Este repositorio contiene un script en Python diseñado para realizar un ataque de fuerza bruta sobre el formulario de login de DVWA (Damn Vulnerable Web Application), una aplicación web diseñada para enseñar y practicar ataques de seguridad.
+
+## 📂 Archivos principales
+
+- `PythonAttack.py`: Script en Python para realizar un ataque de fuerza bruta sobre el formulario de login de DVWA, utilizando combinaciones de usuarios y contraseñas desde archivos de texto. Para que todo funcione correctamente deben estar en el mismo directorio.
+  
+## ⚙️ Requisitos
+
+- Python 3.x
+- [requests](https://pypi.org/project/requests/): `pip install requests`
+
+## 🚀 Cómo usar
+
+1. **Configurar los archivos de entrada**  
+   Crea los archivos `names.txt` y `passwords.txt` con las listas de nombres de usuario y contraseñas que se intentarán. Se dejarán los utilizados en el laboratorio igualmente.
+
+2. **Ejecutar el script**  
+   Ejecuta `PythonAttack.py` con el siguiente comando:
+   ```bash
+   python3 PythonAttack.py
+
+3.**Verificar los resultados**
+El script intentará hacer login con todas las combinaciones de usuario y contraseña y mostrará si el login fue exitoso o no para cada combinación.
+
+## 📸 Ejemplo de salida
+
+```bash
+Intentando: Usuario=admin | Contraseña=password
+Login exitoso! Usuario: admin, Contraseña: password
+
+Intentando: Usuario=pablo | Contraseña=123456
+Login fallido para: pablo, 123456
+...
